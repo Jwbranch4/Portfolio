@@ -1,9 +1,18 @@
+:root {
+  --primary-color: #333;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
 header {
   padding: 20px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: ghostwhite;
+  background-color: white;
 }
 
 header h1 {
@@ -17,7 +26,7 @@ header h1 {
 
 header a {
   text-decoration: none;
-  color: darkblue;
+  color: var(--primary-color);
 }
 
 header nav {
@@ -38,6 +47,40 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
+.aboutMe {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMePicture {
+  flex: 0 1 48%;
+}
+
+.aboutMeArticle {
+  flex: 0 1 48%;
+}
+
+.aboutMe img {
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.projects {
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -47,11 +90,13 @@ header nav ul li a {
 
 .card {
   flex: 0 1 24%;
-  background-color: rgb(135, 135, 155);
+  background-color: white;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px var(--primary-color);
 }
 
 .card img {
@@ -63,4 +108,11 @@ header nav ul li a {
 
 .firstCard {
   flex: 0 1 50%;
+}
+
+.contact {
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
 }
