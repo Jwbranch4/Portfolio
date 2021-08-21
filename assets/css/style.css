@@ -6,6 +6,7 @@ body {
   color: var(--primary-color);
   font-family: sans-serif;
   background-color: whitesmoke;
+  font-size: 2vw;
 }
 header {
   padding: 20px 35px;
@@ -13,6 +14,11 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: white;
+}
+
+h2 {
+  font-size: 2.5vw;
+  border-bottom: solid var(--primary-color);
 }
 
 header h1 {
@@ -69,9 +75,11 @@ header nav ul li a {
 }
 
 .aboutMe img {
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 10px;
   margin: 20px;
+  height: 200px;
+  width: 200px;
 }
 
 .projects {
@@ -85,15 +93,15 @@ header nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 
 .card {
-  flex: 0 1 24%;
+  flex: 0 1 28%;
   background-color: white;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0 0 5px var(--primary-color);
@@ -115,4 +123,23 @@ header nav ul li a {
   align-items: center;
   padding: 10px;
   margin: 20px;
+}
+@media screen and (max-width: 980px) {
+  .card {
+    flex: 0 1 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 1 33%;
+  }
+
+  .firstCard {
+    flex: 0 1 98%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .card {
+    flex: 0 1 100%;
+  }
 }
