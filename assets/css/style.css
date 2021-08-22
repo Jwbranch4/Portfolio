@@ -134,14 +134,9 @@ footer nav ul li a {
   flex: 0 1 50%;
 }
 
-/*.contact {
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-  margin: 20px;
-  background-color: rgb(94, 132, 150);
-  color: azure;
-}*/
+.copyright {
+  font-size: small;
+}
 
 @media screen and (max-width: 980px) {
   .card {
